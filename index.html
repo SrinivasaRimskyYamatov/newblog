@@ -1,0 +1,22 @@
+---
+layout: default
+title: Home
+---
+
+<h1>RimskyBlog</h1>
+
+<!-- 検索ボックス -->
+<input type="text" id="searchBox" placeholder="記事検索...">
+
+<!-- 記事一覧 -->
+<ul id="posts">
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+  </li>
+{% endfor %}
+</ul>
+
+<!-- 検索スクリプト -->
+<script src="/assets/search.js"></script>
