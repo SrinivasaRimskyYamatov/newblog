@@ -1,3 +1,4 @@
 title: Rimsky Blog
-description: 新しいブログ
-theme: minima
+description: 新規ブログ
+theme: null
+markdown: kramdown
